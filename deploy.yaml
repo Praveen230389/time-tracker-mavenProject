@@ -17,12 +17,7 @@ spec:
           image: praveen230389/project # Image that will be used to containers in the cluster
           imagePullPolicy: IfNotPresent
           ports:
-            - containerPort: 8070
-          env:
-            - name: SERVER_ADDRESS
-              value: "0.0.0.0"
-            - name: SERVER_PORT
-              value: "8070" # The port that the container is running on in the cluster
+            - containerPort: 8070 # The port that the container is running on in the cluster
 
 
 ---
