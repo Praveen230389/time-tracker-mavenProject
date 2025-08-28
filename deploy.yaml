@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: project
-          image: praveen230389/project:latest # Image that will be used to containers in the cluster
+          image: praveen230389/project # Image that will be used to containers in the cluster
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8070 # The port that the container is running on in the cluster
