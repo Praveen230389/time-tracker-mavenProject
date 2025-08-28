@@ -26,5 +26,5 @@ RUN rm -rf ROOT
 # Copy generated WAR (assuming your web module produces time-tracker-web.war)
 COPY --from=builder /app/web/target/*.war ROOT.war
 
-EXPOSE 8080
+EXPOSE 8070
 CMD ["catalina.sh", "run"]
